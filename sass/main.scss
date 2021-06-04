@@ -1,0 +1,342 @@
+// variable
+
+$greenish:#18bc9c;
+$blueish:#2c3e50;
+$input-from:#495057;
+
+
+
+// Navbar
+
+header{
+    background-color: $blueish;
+
+    h2{
+        color: white;
+        font-weight: bold;
+    }
+
+    a{
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+// star
+.star{
+    display: inline-block;
+    width: 55px;
+    border-bottom: 2px solid black;
+    
+}
+.star_div{
+   text-align: center;
+   img{
+       width: 20px;
+   }
+   margin-bottom: 15px;
+}
+.star1{
+    display: inline-block;
+    width: 55px;
+    border-bottom: 2px solid white; 
+}
+
+// hero
+
+.hero{
+    background-color: $greenish;
+    height: 500px;
+    
+    .profile{
+        padding-top:70px ;
+        width: 150px;
+    }
+
+   h1{
+       text-align: center;
+       text-transform: uppercase;
+       font-weight: 800;
+       color: white;
+       margin-top: 15px;
+   }
+
+   p{
+       text-align: center;
+       color: white;
+       font-weight: bold;
+       margin-top: 0;
+   }
+}   
+
+#scroll-to-top{
+    a{
+        display: none;
+    }
+}
+
+// Portfolio
+
+.portfolio{
+
+    padding-bottom: 50px;
+    h1{
+        font-weight: bold;
+        color: $blueish;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2em;
+    }
+    .star_div{
+        text-align: center;
+        img{
+            width: 20px;
+        }
+        margin-bottom: 15px;
+     }
+     .star1{
+         display: inline-block;
+         width: 55px;
+         border-bottom: 2px solid $blueish; 
+     }
+
+     
+.container{
+    img{
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+}
+
+.about{
+
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: $greenish;
+    height: 100%;
+
+
+    h1{
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2em;
+    }
+
+    p{
+        color: white;
+        font-weight: bold;
+
+    }
+
+    .button{
+        display: block;
+        border: 1px solid white;
+        text-align: center;
+        padding: 5px;
+        border-radius: 5px;
+
+       a{
+           color: white;
+           text-decoration: none;
+           font-weight: bold;
+       }
+        &:hover{
+            background-color: $blueish;
+        }
+    }   
+    
+}
+
+
+.contact{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h1{
+        font-weight: bold;
+        color:$blueish;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2em;
+    }
+
+    .star_div{
+        text-align: center;
+        img{
+            width: 20px;
+        }
+        margin-bottom: 15px;
+     }
+     .star1{
+         display: inline-block;
+         width: 55px;
+         border-bottom: 2px solid $blueish; 
+     }
+
+     input{
+         display: inline-block;
+     }
+     label{
+         color:$input-from;
+         border-radius: 0;
+         font-size: 1.2em;
+         font-weight: bold;
+     }
+     input, textarea{
+         border: none;
+         border-bottom: 1px solid rgba($color: #495057, $alpha: 0.2);
+         border-radius: 0px;
+         
+     }
+   button{
+       margin-top: 10px;
+       background-color: $greenish;
+       border: 0;
+       font-weight: bold;
+
+       &:active{
+           background-color: $blueish;
+       }
+   } 
+}
+
+footer{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background-color: $blueish;
+    h3{
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    p{
+        text-align: center;
+        color: white;
+    }
+    
+    img{
+        display:inline-block;
+    }
+    
+    .icons{
+        margin-top: 10px;
+        margin-left: 35%;
+    }
+
+    .fab {
+        color: white;
+      }
+
+      .bottom-text{
+          p{
+            padding-bottom: 0;
+            padding-top: 0;
+            margin: 0;
+
+            &:last-child{
+                color: $input-from;
+                font-size: 14px;
+            }
+            
+            
+          }
+        
+      }
+
+}
+
+@media (max-width: 768px){
+    .icons{
+        margin-left: 0px;
+    }
+
+    .hero{
+        h1{
+            font-size: 3em;
+        }
+    }
+
+   .fas{
+       p{
+           display: inline;
+           font-family: sans-serif;
+           font-size: 25px;
+           text-transform: uppercase;
+           font-weight: 400;
+       }
+   }
+
+   #scroll-to-top{
+    a{
+        color: $blueish;
+        font-size: 32px;
+        display: block;
+        
+
+    }   
+    position: fixed;
+    right: 20px;
+     
+   }
+}
+
+
+@media (max-width: 990px){
+    .icons{
+        margin-left: 0px;
+    }
+
+    .hero{
+        h1{
+            font-size: 3em;
+        }
+    }
+
+   .fas{
+       p{
+           display: inline;
+           font-family: sans-serif;
+           font-size: 25px;
+           text-transform: uppercase;
+           font-weight: 400;
+       }
+   }
+
+   #scroll-to-top{
+    a{
+        color: $blueish;
+        font-size: 64px;
+        display: block;
+        
+
+    }   
+    position: fixed;
+    right: 20px;
+    bottom: 5px;
+     
+   }
+
+   footer{
+       padding-top: 50px;
+       
+       h3{
+           padding-bottom: 15px;
+           p{
+               padding-bottom: 10px;
+           }
+       a{
+           padding-bottom: 20px;
+       }
+        }
+   }
+}
+
+
